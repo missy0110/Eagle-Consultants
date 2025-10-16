@@ -117,8 +117,8 @@ export default function ChatBot() {
   const suggestQuestions = [
   "What services do you offer?",
   "How much does web development cost?",
-  "I&apos;m having trouble with the contact form",
-  "What&apos;s your response time?"
+  "I'm having trouble with the contact form",
+  "What's your response time?"
 ];
 
   return (
