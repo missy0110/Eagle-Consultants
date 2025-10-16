@@ -2,6 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import ChatBot from "../components/ChatBot";
 
 export const metadata: Metadata = {
   title: "Eagle Consultants",
@@ -25,6 +26,9 @@ export default function RootLayout({ children }: React.PropsWithChildren) {
         <main className="flex-grow">{children}</main>
 
         <Footer />
+        
+        {/* ChatBot Component */}
+        <ChatBot />
       </body>
     </html>
   );

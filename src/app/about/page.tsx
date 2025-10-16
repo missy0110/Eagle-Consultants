@@ -88,7 +88,7 @@ export default function AboutPage() {
           </div>
 
           {/* Title */}
-          <h3 className="text-lg font-semibold mb-3 text-blue-900">{val.title}</h3>
+          <h3 className="text-lg font-semibold mb-3 text-black">{val.title}</h3>
 
           {/* Description */}
           <p className="text-gray-600">{val.desc}</p>
