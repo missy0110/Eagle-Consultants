@@ -92,8 +92,9 @@ export default function ChatBot() {
               if (parsed.error) {
                 throw new Error(parsed.error);
               }
-            } catch (e) {
+            } catch (err) {
               // Ignore JSON parse errors for incomplete data
+              console.log('JSON parse error:', err);
             }
           }
         }
@@ -114,10 +115,10 @@ export default function ChatBot() {
   };
 
   const suggestQuestions = [
-    "What services do you offer?",
-    "How much does web development cost?",
-    "I'm having trouble with the contact form",
-    "What's your response time?"
+    'What services do you offer?',
+    'How much does web development cost?',
+    'I&apos;m having trouble with the contact form',
+    'What&apos;s your response time?'
   ];
 
   return (
@@ -164,7 +165,7 @@ export default function ChatBot() {
             {messages.length === 0 ? (
               <div className="text-center text-gray-500 my-8">
                 <FaRobot className="text-4xl text-blue-500 mx-auto mb-3" />
-                <p className="font-semibold text-gray-700">Hello! I'm Eagle 🦅</p>
+                <p className="font-semibold text-gray-700">Hello! I&apos;m Eagle 🦅</p>
                 <p className="text-sm mt-1">How can I help you today?</p>
                 
                 {/* Suggested Questions */}
